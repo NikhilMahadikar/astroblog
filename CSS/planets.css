@@ -1,0 +1,134 @@
+*{
+    transition: all 0.2s;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(white,teal);
+    background-repeat: no-repeat;
+    background-size:100vw 1000vh;
+}
+.a{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+
+}
+.a:hover{
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.2)
+}
+#header{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    background-image: url(../ASSET/IMAGE/Planets/3.jpg);
+    background-size: 100% 500px;
+}
+.b{
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    background-color: transparent;
+    border: none;
+}
+#left{
+    position: absolute;
+    left:0px;
+    top: 50vh;
+    color: white;
+}
+#right{
+    position: absolute;
+    right:0px;
+    top: 50vh;
+    color: white;
+}
+#garllaryImages{
+    position: absolute;
+    top:115vh;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin-left: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
+    z-index: -1;
+}
+#heading{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 52vh;
+    left: 12vw;
+    letter-spacing: 15px;
+    word-spacing: 10px;
+    text-shadow: 5px 5px 5px black;
+}
+#subWindow{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    z-index: 3;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    word-wrap: break-word;
+    align-items: center;
+}
+#subWindowImg{
+    width: 45vw;
+    height: 60vh;
+    position: absolute;
+    border: 5px groove white;
+}
+#close{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+#imageHeading{
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
+    color: white;
+}
+#imgpara{
+    position: absolute;
+    right:2vw;
+    top: 15vh;
+    color: white;
+    width: 24vw;
+    height: 35vh;
+    text-align: justify;
+    overflow: auto;
+}
+#subWindow1{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10vh;
+    float: left;
+    left: 2%;
+}
+#subWindow2{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    float: left;
+    top: 10vh;
+    right: 1vw;
+
+}

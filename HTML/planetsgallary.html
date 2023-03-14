@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Gallary-Planets</title>
+      <script src="../JS/planets.js" defer></script>
+      <link rel="stylesheet" href="../CSS/planets.css">
+      <link rel="stylesheet" href="../CSS/navbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary Of Planets</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+           <a href="./BLOG.HTML"><li class="mli">HOME</li></a>
+           <a href="#"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <li class="sli">Planets</li>
+                    <li class="sli">Stars</li>
+                    <li class="sli">Blackhole</li>
+                    <li class="sli">Astroids</li>
+                    <li class="sli">satellite</li>
+                </ul>
+            </li>
+            <a href="#"> <li class="mli">Logout</li></a>
+        </ul>
+    </div>
+<div id="garllaryImages">
+    <img class="a"  onclick="openImg(1,'Mercury','It is the smallest planet in the Solar System, with an equatorial radius of 2,439.7 kilometres.')">
+    <img class="a"  onclick="openImg(2,'Venus','Venus is the second planet from the Sun. It is sometimes called Earths sister or twin planet as it is almost as large and has a similar composition.')">
+    <img class="a"  onclick="openImg(3,'Earth','Earth is the third planet from the Sun in the Solar System. It is the only planet known to have life on it. The Earth formed about 4.5 billion years ago')">
+    <img class="a"  onclick="openImg(4,'Mars','Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, larger only than Mercury.')">
+    <img class="a"  onclick="openImg(5,'Jupiter','Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun.')">
+    <img class="a"  onclick="openImg(6,'Saturn','Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.')">
+    <img class="a"  onclick="openImg(7,'Uranus','Uranus is the seventh planet from the Sun. It is named after Greek sky deity Uranus Caelus, who in Greek mythology is the father of Cronus Saturn, a grandfather of Zeus Jupiter and great-grandfather of Ares Mars.')">
+    <img class="a"  onclick="openImg(8,'Neptune','Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet')">
+    <img class="a"  onclick="openImg(9,'Pluto','Pluto minor-planet designation: 134340 Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It is the ninth-largest and tenth-most-massive known object to directly orbit the Sun. ')">
+    <img class="a"  onclick="openImg(10,'Proxima B','Proxima Centauri b, sometimes referred to as Alpha Centauri Cb, is an exoplanet orbiting within the habitable zone of the red dwarf star Proxima Centauri, which is the closest star to the Sun and part of the triple star system Alpha Centauri.')">
+</div>
+<div id="subWindow" style="display: none;">
+    <h1 id="close" onclick="closeImg()">X</h1>
+
+<div id="subWindow1">
+    <img id="subWindowImg" id="fullimg" src="../ASSET/IMAGE/Planets/1.jpg">
+</div>
+<div id="subWindow2">
+    <h1 id="imageHeading">Heading</h1>
+    <p id="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odio?</p>
+</div>
+</div>
+</body>
+</html>
